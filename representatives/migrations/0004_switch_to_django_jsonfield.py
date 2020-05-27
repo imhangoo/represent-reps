@@ -16,21 +16,21 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='candidate',
             name='extra',
-            field=django.contrib.postgres.fields.jsonb.JSONField(default={}),
+            field=django.contrib.postgres.fields.jsonb.JSONField(default=dict),
         ),
         migrations.AlterField(
             model_name='candidate',
             name='offices',
-            field=django.contrib.postgres.fields.jsonb.JSONField(default=[]),
+            field=django.contrib.postgres.fields.jsonb.JSONField(default=list),
         ),
         migrations.AlterField(
             model_name='representative',
             name='extra',
-            field=django.contrib.postgres.fields.jsonb.JSONField(default={}),
+            field=django.contrib.postgres.fields.jsonb.JSONField(default=dict),
         ),
         migrations.AlterField(
             model_name='representative',
             name='offices',
-            field=django.contrib.postgres.fields.jsonb.JSONField(default=[]),
+            field=django.contrib.postgres.fields.jsonb.JSONField(default=list),
         ),
     ]

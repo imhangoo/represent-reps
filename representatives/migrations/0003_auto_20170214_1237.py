@@ -27,12 +27,12 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='candidate',
             name='extra',
-            field=JSONField(default={}),
+            field=JSONField(default=dict),
         ),
         migrations.AlterField(
             model_name='candidate',
             name='offices',
-            field=JSONField(default=[]),
+            field=JSONField(default=list),
         ),
         migrations.AlterField(
             model_name='election',
@@ -52,12 +52,12 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='representative',
             name='extra',
-            field=JSONField(default={}),
+            field=JSONField(default=dict),
         ),
         migrations.AlterField(
             model_name='representative',
             name='offices',
-            field=JSONField(default=[]),
+            field=JSONField(default=list),
         ),
         migrations.AlterField(
             model_name='representativeset',

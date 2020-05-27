@@ -22,21 +22,21 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='candidate',
             name='extra',
-            field=JSONField(blank=True),
+            field=JSONField(default=dict, blank=True),
         ),
         migrations.AlterField(
             model_name='candidate',
             name='offices',
-            field=JSONField(blank=True),
+            field=JSONField(default=dict, blank=True),
         ),
         migrations.AlterField(
             model_name='representative',
             name='extra',
-            field=JSONField(blank=True),
+            field=JSONField(default=dict, blank=True),
         ),
         migrations.AlterField(
             model_name='representative',
             name='offices',
-            field=JSONField(blank=True),
+            field=JSONField(default=dict, blank=True),
         ),
     ]
